@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Petak Desain</title>
+    <link href="bootstrap4/bootstrap-4.6.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }      
+      footer {
+        background-color: #3f3636;
+        padding: 25px;
+      }
+      body{
+        background-image: url(images/logo.jpg);
+        background-attachment: fixed;
+        background-size: 100%;
+      }
+      
+    </style>
+</head>
+<body>
+  
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark text-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)">
+      <img src="images/logo linkaran.jpg" class="rounded-circle" width="40px">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="produk.html">Produk</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="beli.html">Beli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="kontakkami.html">Kontak Kami</a>
+          </li>
+        </ul>
+          <form class="form-inline " action="/action_page.php">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+          </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container bg-success">
+    <div class="row">
+      <div class="col">
+        <form action="/action_page.php" class="needs-validation" novalidate>
+          <div class="form-group">
+            <label for="uname">NAMA</label>
+            <input type="text" class="form-control" id="name" placeholder="" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="pwd">EMAIL</label>
+            <input type="email" class="form-control" id="email" placeholder="" name="email" required>
+          </div>
+          <div class="form-group">
+            <label for="alamat">ALAMAT</label>
+            <textarea name="alamat" id="" cols="148" rows="5"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="uname">DATE</label>
+            <input type="date" class="form-control" id="name" placeholder="" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="uname">TYPE COVER</label>
+          </div>
+          <div class="form-group">
+            <label for="uname">COVER WADPATT</label>
+            <input type="radio" name="type" id="">
+            <label for="uname">COVER BUKU</label>
+            <input type="radio" name="type" id="">
+          </div>
+          <div class="form-group">
+            <label for="uname">JUDUL CERITA</label>
+            <input type="text" class="form-control" id="name" placeholder="" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="uname">NAMA PENULIS</label>
+            <input type="text" class="form-control" id="name" placeholder="" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="alamat">BLURB</label>
+            <textarea name="alamat" id="" cols="148" rows="5"></textarea>
+          </div>
+          <div class="form-group form-check">
+            <label class="form-check-label">
+              <input class="form-check-input" type="checkbox" name="remember" required> I agree on blabla.
+              <div class="valid-feedback">Valid.</div>
+              <div class="invalid-feedback">Check this checkbox to continue.</div>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        <script>
+        // Disable form submissions if there are invalid fields
+        (function() {
+          'use strict';
+          window.addEventListener('load', function() {
+            // Get the forms we want to add validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function(form) {
+              form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+              }, false);
+            });
+          }, false);
+        })();
+        </script>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="row">
+      <div class="col-12 text-light text-center"><h3>Information</h3></div>
+      <div class="col-6 text-light">       
+        <p>>Petak Desain adalah sebuah bisnis jasa desain yang berfokus untuk membantu para penulis yang merasa kurang puas dengan cover dari cerita yang mereka buat. Kami akan berusaha semaksimal mungkin untuk membuat desain cover yang sesuai dengan keinginan penulis dan disukai oleh pembaca.</p>
+      </div>
+      <div class="col-6 text-light">
+        <p>Ngeblur? Terpotong? Jangan khawatir. Hanya dengan 25000 anda sudah mendapatkan cover yang bagus, jelas dan tentunya HD. Tunggu apa lagi, hubungi kami sekarang</p>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script src="bootstrap4/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+
+
+
+</body>
+</html>
